@@ -90,7 +90,7 @@ nav{
 .Main_header{
   font-family: 'Poppins', sans-serif; 
   font-weight: lighter;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/Images/unnamed.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Images/unnamed.jpg);
   height: 100vh;
   max-width: 100vw;
   background-repeat: no-repeat;
