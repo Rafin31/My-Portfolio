@@ -168,7 +168,7 @@ hr.one{
 }
 .About .col2 img{
   height: 100%;
-  width: 100%;
+  width: 400px;
   float: right;
   padding-right: 15px;
   flex: 1;
@@ -191,7 +191,7 @@ hr.one{
   background:rgba(0,0,0,0.9);
   color: #ecf0f1;
   box-sizing: border-box;
-  box-shadow: 25px 100px 25px rgba(0,0,0,0.7);
+  box-shadow: 25px 25px 25px rgba(0,0,0,0.7);
   width: 400px;
   height: 400px;
   padding: 40px;
@@ -210,17 +210,20 @@ hr.one{
    font-size: 60px;
    padding-top: 15px;
 }
-/*footer{
+footer{
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 10vh;
+  letter-spacing: 0.8rem;
+  font-size: 1rem;
   background-color: #34495e ;
   font-family: 'Poppins', sans-serif; 
   z-index: 1;
   color: #ecf0f1 ;
-  font-weight: bold;
-}*/
+  font-weight: lighter;
+  margin-top: 80px;
+}
 
 
 /* Media Queries */
@@ -299,9 +302,14 @@ hr.one{
   display: flex;
   align-content: center;
   align-items: center;
+  width: 300px;
 }
 .education{
   flex-wrap: wrap;
  }
+ .education .box {
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.7);
+ }
+ 
 }
 
