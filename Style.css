@@ -12,7 +12,6 @@ html {
 body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
-    overflow-y: auto;
 }
 
 nav {
@@ -138,7 +137,7 @@ nav {
     border: 2px solid #f1c40f;
     padding: 0.8rem 0.8rem;
     line-height: 8rem;
-    transition: 0.2s ease-in;
+    transition: background-color 0.2s linear;
 }
 
 .Main_header .col2 :hover {
@@ -222,6 +221,11 @@ hr.one {
     letter-spacing: 0.5rem;
     margin: 20px;
     overflow: hidden;
+    transition: 0.3s linear;
+}
+
+.education :hover {
+    transform: scale(1.1);
 }
 
 .box p {
@@ -240,11 +244,12 @@ hr.one {
 
 /*Fotter section*/
 
-.copyright_section {
+footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 10vh;
+    height: 25vh;
     letter-spacing: 0.8rem;
     font-size: 1rem;
     background-color: #34495e;
@@ -252,6 +257,47 @@ hr.one {
     color: #ecf0f1;
     font-weight: lighter;
     margin-top: 80px;
+}
+
+.social_links {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.social_links a {
+    text-decoration: none;
+    margin: 30px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0 5px 2px #2f3640;
+}
+
+.social_links i {
+    transition: all 0.3s linear;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-facebook-messenger {
+    color: #00a8ff;
+}
+
+.fa-instagram {
+    color: #e84393
+}
+
+.fa-github {
+    color: #4078c0;
+}
+
+footer a:hover .fab {
+    transform: scale(1.8);
 }
 
 
@@ -334,5 +380,22 @@ hr.one {
     }
     .education .box {
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
+    }
+    footer a:hover .fab {
+        transform: scale(1.3);
+    }
+    .social_links {
+        max-height: 60px;
+    }
+    .social_links a {
+        margin: 0 10px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+        letter-spacing: 0.5rem;
     }
 }
