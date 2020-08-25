@@ -84,7 +84,7 @@ nav {
 }
 
 .checkbtn {
-    font-size: 2rem;
+    font-size: 1rem;
     color: white;
     float: right;
     line-height: 8rem;
@@ -102,7 +102,7 @@ nav {
 
 .Main_header {
     font-weight: lighter;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/unnamed.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/unpllash2.jpg);
     background-attachment: fixed;
     height: 100vh;
     max-width: 100vw;
@@ -120,7 +120,6 @@ nav {
 
 .col span {
     color: #f1c40f;
-    text-transform: uppercase;
 }
 
 .col h1 {
@@ -202,6 +201,10 @@ hr.one {
 /*Education*/
 
 .education {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(Images/education.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
     display: flex;
     width: 100vw;
@@ -250,7 +253,7 @@ hr.one {
     font-size: 1.5rem;
     letter-spacing: 0.5rem;
     font-weight: bold;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Images/skill.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(Images/ilya-pavlov-OqtafYT5kTw-unsplash.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -303,7 +306,8 @@ hr.one {
 }
 
 .skill_level {
-    background: #f1c40f;
+    background: #773be7;
+    border-radius: 50px;
     height: 5px;
 }
 
@@ -391,21 +395,32 @@ footer a:hover .fab {
         width: 100%;
         height: 0;
         background: #34495e;
-        top: 8rem;
+        top: 6rem;
         opacity: 0;
         text-align: center;
         transition: 0.3s ease;
+        pointer-events: none;
     }
     .checkbtn {
         display: block;
         font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(-50%, 0%);
     }
     #check:checked~.navlinks {
         height: 400px;
         opacity: 1;
+        display: flex;
+        pointer-events: all;
     }
     .col {
-        font-size: 1.5rem;
+        font-size: 3rem;
+        margin-left: 40px;
+    }
+    hr.one {
+        width: 90%;
     }
     .Main_header {
         height: 100vh;
@@ -441,6 +456,7 @@ footer a:hover .fab {
     }
     .education {
         flex-wrap: wrap;
+        background-size: contain;
     }
     .education .box {
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
