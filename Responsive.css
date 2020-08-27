@@ -99,14 +99,18 @@
         font-size: 1.5rem;
         letter-spacing: 0.2rem;
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        padding-left: 0%;
     }
     #tag {
         position: relative;
         top: 20px;
-        right: 10px;
+    }
+    .skillbox {
+        box-sizing: border-box;
+        width: 74%;
+        margin-left: 20%;
     }
     footer a:hover .fab {
         transform: scale(1.3);
