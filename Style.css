@@ -378,6 +378,14 @@ footer {
     color: #4078c0;
 }
 
+.fa-envelope {
+    color: #d74640;
+}
+
 footer a:hover .fab {
+    transform: scale(1.8);
+}
+
+footer a:hover .fas {
     transform: scale(1.8);
 }
